@@ -1,0 +1,41 @@
+.navbar{
+
+    position: fixed;
+    z-index: 9999;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  
+
+
+/* glassmorphism effect */
+
+    background: rgba( 255, 255, 255, 0.3 );
+/* box-shadow: 0 8px 32px 0 rgba(220, 222, 250, 0.37); */
+backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center ;
+    gap: 10px;
+}
+
+.cta-btn{
+    background-color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0.4rem;
+    color: #ffffff;
+}

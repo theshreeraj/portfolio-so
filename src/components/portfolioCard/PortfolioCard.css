@@ -1,0 +1,33 @@
+.portfolio-card{
+    width: 28%;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    position: relative;
+}
+
+.portfolio-web > img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.user-dp > img{
+    position: absolute;
+    width: 20%;
+    border-radius: 50%;
+    top: 150px;
+    left: 10px;
+}
+
+.portfolio-content{
+    padding: 50px 10px 10px 10px;
+    
+}
+
+.card-btn{
+    background-color: black;
+    padding: 4px 6px;
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+}

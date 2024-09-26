@@ -1,0 +1,22 @@
+.categories-container{
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.category-card1{
+    width: 25%;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+}
+
+
+.category-card1 > img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.category-content{
+    padding: 12px;
+}

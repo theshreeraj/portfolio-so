@@ -1,0 +1,20 @@
+{
+    "users": {
+        "user1": {
+            "portfolio-hero": "https://theshreeraj.vercel.app/assets/Unboxproj-d7e76be6.png",
+            "profile-photo": "https://theshreeraj.vercel.app/assets/Unboxproj-d7e76be6.png",
+            "username": "Naved Shaikh",
+            "title": "Full Stack Developer",
+            "portfolio-link": "https://theshreeraj.vercel.app/",
+            "linkedIn": "https://theshreeraj.vercel.app/"
+        },
+        "user2": {
+            "portfolio-hero": "https://theshreeraj.vercel.app/assets/Unboxproj-d7e76be6.png",
+            "profile-photo": "https://theshreeraj.vercel.app/assets/Unboxproj-d7e76be6.png",
+            "username": "Naved Shaikh",
+            "title": "Full Stack Developer",
+            "portfolio-link": "https://theshreeraj.vercel.app/",
+            "linkedIn": "https://theshreeraj.vercel.app/"
+        }
+    }
+}
