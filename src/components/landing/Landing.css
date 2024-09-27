@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+.hero {
+  display: flex;
+  align-items:center;
+  justify-content:end;
+  flex-direction: column;
+  height: 90vh; /* Changed to vh for full screen */
+  background-color: #1e5c72; /* Adjusted based on your green color */
+  /* background-image: url("https://plus.unsplash.com/premium_photo-1707563544861-d7d1c01c3ea0?q=80&w=1924&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  background-image: url("../../assets/landing4.png");
+  background-repeat: repeat;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  animation: marquee 30s infinite linear;
+  margin-bottom: 100px;
+}
+
+.hero h1,
+.hero p {
+  color: #000000;
+  text-shadow: 0 0px 10px rgba(97, 97, 97, 0.2);
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 550px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 12px;
+  }
+}
+
+.hero code {
+  padding: 4px;
+  margin: 0px 5px;
+  background-color: #000000;
+  border-radius: 5px;
+  color: white;
+}
+
+@keyframes marquee {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: -1190px;
+  }
+}

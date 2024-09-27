@@ -4,24 +4,48 @@ import "./Portfolios.css";
 
 // Import your JSON data
 const jsonData = {
-    "users": {
-        "user1": {
-            "portfolio-hero": "https://theshreeraj.vercel.app/assets/Unboxproj-d7e76be6.png",
-            "profile-photo": "https://theshreeraj.vercel.app/assets/Unboxproj-d7e76be6.png",
-            "username": "Naved Shaikh",
-            "title": "Full Stack Developer",
-            "portfolio-link": "https://theshreeraj.vercel.app/",
-            "linkedIn": "https://theshreeraj.vercel.app/"
-        },
-        "user2": {
-            "portfolio-hero": "https://theshreeraj.vercel.app/assets/Unboxproj-d7e76be6.png",
-            "profile-photo": "https://theshreeraj.vercel.app/assets/Unboxproj-d7e76be6.png",
-            "username": "Naved Shaikh",
-            "title": "Full Stack Developer",
-            "portfolio-link": "https://theshreeraj.vercel.app/",
-            "linkedIn": "https://theshreeraj.vercel.app/"
-        }
-    }
+  users: {
+    user1: {
+      "portfolio-hero":
+        "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/66a2627500e0831843fa5601_Shreyas%20Deshmukh%20-%20wall%20of%20portfolios-p-1080.png",
+      "profile-photo":
+        "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/669bb3c2b5fbc7d9780a08b4_1703927771769-p-500.jpeg",
+      username: "Naved Shaikh",
+      title: "Full Stack Developer",
+      "portfolio-link": "https://theshreeraj.vercel.app/",
+      linkedIn: "https://theshreeraj.vercel.app/",
+    },
+    user2: {
+      "portfolio-hero":
+        "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/66a3fbde52d372acd84dbc8a_Nicolas%20Pellegrino%20-%20Wall%20of%20portfolios-p-1080.png",
+      "profile-photo":
+        "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/66a3fc675edfcd6748a0ee72_1709600949949-p-500.jpeg",
+      username: "Shreyas Deshmukh",
+      title: "Full Stack Developer",
+      "portfolio-link": "https://theshreeraj.vercel.app/",
+      linkedIn: "https://theshreeraj.vercel.app/",
+    },
+    user3: {
+      "portfolio-hero":
+        "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/66a2661bd5567f2b8e84ff6f_Anirudh%20Goyal%20-%20Wall%20of%20portfolios-p-1080.png",
+      "profile-photo":
+        "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/668c0348723cdd9cbde90b5a_1718310107172.jpeg",
+      username: "Anirudh Goyal",
+      title: "Full Stack Developer",
+      "portfolio-link": "https://theshreeraj.vercel.app/",
+      linkedIn: "https://theshreeraj.vercel.app/",
+    },
+    user4: {
+      "portfolio-hero":
+        "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/668a80d91de9f8ecb34c1541_Screenshot%202024-07-07%20at%205.15.51%20PM-p-1080.png",
+      "profile-photo":
+        "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/668a81590fbf2f23d89760ad_1719396842371-p-500.jpeg",
+      username: "Anirudh Goyal",
+      title: "Full Stack Developer",
+      "portfolio-link": "https://theshreeraj.vercel.app/",
+      linkedIn: "https://theshreeraj.vercel.app/",
+    },
+  },
 };
 
 const Portfolios = () => {

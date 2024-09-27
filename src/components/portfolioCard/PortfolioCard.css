@@ -1,29 +1,37 @@
-.portfolio-card{
+.portfolio-card {
     width: 28%;
     border: 1px solid whitesmoke;
     border-radius: 10px;
     position: relative;
+    overflow: hidden; /* Add this to prevent overflow issues */
 }
 
-.portfolio-web > img{
+.portfolio-web > img {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
+    display: block; /* Ensure the image is treated as a block element */
 }
 
-.user-dp > img{
+.user-dp {
     position: absolute;
-    width: 20%;
+    top: 200px; /* Adjust this based on the height of the banner image */
+    left: 15px; /* Adjust the left value for better positioning */
+    transform: translateY(-50%); /* To keep the image centered vertically */
+}
+
+.user-dp > img {
+    width: 60px; /* Fix the size of the profile picture */
+    height: 60px; /* Keep it proportional */
     border-radius: 50%;
-    top: 150px;
-    left: 10px;
+    border: 3px solid white; /* Add a white border around the image */
 }
 
-.portfolio-content{
-    padding: 50px 10px 10px 10px;
-    
+.portfolio-content {
+    padding: 60px 10px 10px 10px; /* Adjust padding to avoid overlap */
+    text-align: left; /* Center-align content */
 }
 
-.card-btn{
+.card-btn {
     background-color: black;
     padding: 4px 6px;
     margin: 2px;
