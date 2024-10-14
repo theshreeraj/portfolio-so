@@ -1,8 +1,9 @@
 // App.js
 import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/home/Home';
 import PortForm from './pages/PortForm/PortForm';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import UserDetail from './pages/userDetail/UserDetail';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         <Route path="/" element={<Home />}/>
         
         <Route path="/form" element={<PortForm />} />
+
+        <Route path='/userDetails' element={<UserDetail />} />
       </Routes>
     </BrowserRouter>
    </>

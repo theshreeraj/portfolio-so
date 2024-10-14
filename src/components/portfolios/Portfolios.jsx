@@ -7,13 +7,13 @@ const jsonData = {
   users: {
     user1: {
       "portfolio-hero":
-        "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/66a2627500e0831843fa5601_Shreyas%20Deshmukh%20-%20wall%20of%20portfolios-p-1080.png",
+        "https://gauriportfolioo.netlify.app/assets/Yummyy.png",
       "profile-photo":
-        "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/669bb3c2b5fbc7d9780a08b4_1703927771769-p-500.jpeg",
-      username: "Naved Shaikh",
+        "https://gauriportfolioo.netlify.app/assets/snap1.jpg",
+      username: "Gauri Pawar",
       title: "Full Stack Developer",
-      "portfolio-link": "https://theshreeraj.vercel.app/",
-      linkedIn: "https://theshreeraj.vercel.app/",
+      "portfolio-link": "https://gauriportfolioo.netlify.app/",
+      linkedIn: "https://www.linkedin.com/public-profile/settings",
     },
     user2: {
       "portfolio-hero":
@@ -56,7 +56,7 @@ const Portfolios = () => {
       <h3 style={{ marginTop: "35px", marginBottom: "35px" }}>Portfolios</h3>
       <div className="portfolio-container">
         {users.map((user, index) => (
-          <PortfolioCard key={index} user={user} />
+          <PortfolioCard key={index} user={user}  />
         ))}
       </div>
     </>

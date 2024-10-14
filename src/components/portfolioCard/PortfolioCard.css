@@ -39,3 +39,10 @@
     border-radius: 3px;
     color: #ffffff;
 }
+
+
+@media screen and (max-width:435px) {
+    .portfolio-card{
+        width: 90%;
+    }
+}
