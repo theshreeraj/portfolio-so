@@ -7,8 +7,14 @@ const UserDetail = () => {
     <>
       <div className="user-detail-container">
         <div className="user-detail-card">
+          <div className="pulse"></div>
           <div className="user-detail-dp">
             <img src={userDP} alt="" />
+          </div>
+          <div style={{ display: "flex", gap: "1rem" }}>
+            <button className="">Connect</button>
+            <button className="">Resume</button>
+            <button className="">Copy Email</button>
           </div>
           <div className="user-detail-content">
             <h1>Diego Mendes</h1>
@@ -35,6 +41,23 @@ const UserDetail = () => {
               background, Diego has led impactful projects across multiple tech
               platforms.
             </p>
+
+            <div>
+              <h3>Skills</h3>
+              <div style={{ display: "flex", gap: "1rem" }}>
+                <p className="badge-btn">HTML</p>
+                <p className="badge-btn">CSS</p>
+                <p className="badge-btn">Javascript</p>
+                <p className="badge-btn">React.js</p>
+                <p className="badge-btn">Node.js</p>
+                <p className="badge-btn">Expess.js</p>
+                <p className="badge-btn">Mongo DB</p>
+                <p className="badge-btn">Postman</p>
+                <p className="badge-btn">Vercel</p>
+                <p className="badge-btn">Render</p>
+                <p className="badge-btn">Github</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

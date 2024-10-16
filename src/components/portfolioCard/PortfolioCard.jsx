@@ -18,7 +18,10 @@ const PortfolioCard = ({ user }) => {
       <div className="portfolio-content">
         <h3>{user.username}</h3>
         <p>{user.title}</p>
-        <button className="card-btn">Portfolio</button>
+        <a href={user.portfoliolink} target="_blank" rel="noreferrer">
+          {" "}
+          <button className="card-btn">Portfolio</button>
+        </a>
         <Link to="/userDetails">
           <button className="card-btn">Details</button>
         </Link>

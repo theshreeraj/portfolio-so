@@ -6,13 +6,11 @@ import "./Portfolios.css";
 const jsonData = {
   users: {
     user1: {
-      "portfolio-hero":
-        "https://gauriportfolioo.netlify.app/assets/Yummyy.png",
-      "profile-photo":
-        "https://gauriportfolioo.netlify.app/assets/snap1.jpg",
+      "portfolio-hero": "https://gauriportfolioo.netlify.app/assets/Yummyy.png",
+      "profile-photo": "https://gauriportfolioo.netlify.app/assets/snap1.jpg",
       username: "Gauri Pawar",
       title: "Full Stack Developer",
-      "portfolio-link": "https://gauriportfolioo.netlify.app/",
+      portfoliolink: "https://gauriportfolioo.netlify.app/",
       linkedIn: "https://www.linkedin.com/public-profile/settings",
     },
     user2: {
@@ -20,9 +18,9 @@ const jsonData = {
         "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/66a3fbde52d372acd84dbc8a_Nicolas%20Pellegrino%20-%20Wall%20of%20portfolios-p-1080.png",
       "profile-photo":
         "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/66a3fc675edfcd6748a0ee72_1709600949949-p-500.jpeg",
-      username: "Shreyas Deshmukh",
+      username: "Sharavari Alawekar",
       title: "Full Stack Developer",
-      "portfolio-link": "https://theshreeraj.vercel.app/",
+      portfoliolink: "https://theshreeraj.vercel.app/",
       linkedIn: "https://theshreeraj.vercel.app/",
     },
     user3: {
@@ -30,9 +28,9 @@ const jsonData = {
         "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/66a2661bd5567f2b8e84ff6f_Anirudh%20Goyal%20-%20Wall%20of%20portfolios-p-1080.png",
       "profile-photo":
         "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/668c0348723cdd9cbde90b5a_1718310107172.jpeg",
-      username: "Anirudh Goyal",
+      username: "Aayan Inamdar",
       title: "Full Stack Developer",
-      "portfolio-link": "https://theshreeraj.vercel.app/",
+      portfoliolink: "https://theshreeraj.vercel.app/",
       linkedIn: "https://theshreeraj.vercel.app/",
     },
     user4: {
@@ -42,7 +40,7 @@ const jsonData = {
         "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/668a81590fbf2f23d89760ad_1719396842371-p-500.jpeg",
       username: "Anirudh Goyal",
       title: "Full Stack Developer",
-      "portfolio-link": "https://theshreeraj.vercel.app/",
+      portfoliolink: "https://theshreeraj.vercel.app/",
       linkedIn: "https://theshreeraj.vercel.app/",
     },
   },
@@ -56,7 +54,7 @@ const Portfolios = () => {
       <h3 style={{ marginTop: "35px", marginBottom: "35px" }}>Portfolios</h3>
       <div className="portfolio-container">
         {users.map((user, index) => (
-          <PortfolioCard key={index} user={user}  />
+          <PortfolioCard key={index} user={user} />
         ))}
       </div>
     </>
