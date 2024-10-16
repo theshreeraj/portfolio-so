@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
       <div className="navbar">
         <div className="logo">
-          <h3>Wall Of Portfolio</h3>
+          <h3>Portfolio.so</h3>
           <p>Portfolios</p>
           <p>Case Studies</p>
         </div>
