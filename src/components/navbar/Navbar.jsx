@@ -8,8 +8,6 @@ const Navbar = () => {
       <div className="navbar">
         <div className="logo">
           <h3>Portfolio.so</h3>
-          <p>Portfolios</p>
-          <p>Case Studies</p>
         </div>
 
         <div className="nav-menu">
