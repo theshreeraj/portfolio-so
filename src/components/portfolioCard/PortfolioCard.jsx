@@ -25,7 +25,9 @@ const PortfolioCard = ({ user }) => {
         </div>
         <div>
           <h3>{user.username}</h3>
-          <p>{user.title}</p>
+          <p>
+            <small>{user.title}</small>
+          </p>
           <a href={user.portfoliolink} target="_blank" rel="noreferrer">
             {" "}
             <button className="card-btn">Portfolio</button>
