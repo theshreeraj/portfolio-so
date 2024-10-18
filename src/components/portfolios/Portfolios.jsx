@@ -3,6 +3,7 @@ import PortfolioCard from "../portfolioCard/PortfolioCard";
 import "./Portfolios.css";
 import sharvariAlawekar from "../../assets/portfoliohero/sharvari-alawekar-hero.png";
 import gauriPawar from "../../assets/portfoliohero/gauri-pawar-hero.png";
+import abhijeetmane from "../../assets/portfoliohero/abhijeet-mane-hero.png";
 
 // Import your JSON data
 const jsonData = {
@@ -23,15 +24,14 @@ const jsonData = {
       portfoliolink: "https://sharvariportfolio.vercel.app/",
       linkedIn: "https://www.linkedin.com/in/sharvari-alavekar-88a333270/",
     },
-    // user3: {
-    //   "portfolio-hero":
-    //     "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/66a2661bd5567f2b8e84ff6f_Anirudh%20Goyal%20-%20Wall%20of%20portfolios-p-1080.png",
-    //   "profile-photo": "https://shorturl.at/bFh30",
-    //   username: "Aayan Inamdar",
-    //   title: "Full Stack Developer",
-    //   portfoliolink: "https://theshreeraj.vercel.app/",
-    //   linkedIn: "https://theshreeraj.vercel.app/",
-    // },
+    user3: {
+      "portfolio-hero": abhijeetmane,
+      "profile-photo": "https://shorturl.at/5JwyH",
+      username: "Abhijeet Mane",
+      title: "Full Stack Developer",
+      portfoliolink: "https://abhijeet-mane-portfolio.vercel.app/",
+      linkedIn: "https://www.linkedin.com/in/abhijeet-mane-07012000",
+    },
     // user4: {
     //   "portfolio-hero":
     //     "https://cdn.prod.website-files.com/65c14454c8e90beca1ee62a8/668a80d91de9f8ecb34c1541_Screenshot%202024-07-07%20at%205.15.51%20PM-p-1080.png",
