@@ -1,48 +1,43 @@
 .portfolio-card {
-    width: 28%;
-    border: 1px solid whitesmoke;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden; /* Add this to prevent overflow issues */
+  width: 28%;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
 }
 
 .portfolio-web > img {
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-    display: block; /* Ensure the image is treated as a block element */
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  display: block; /* Ensure the image is treated as a block element */
 }
 
 .user-dp {
-    position: absolute;
-    top: 200px; /* Adjust this based on the height of the banner image */
-    left: 15px; /* Adjust the left value for better positioning */
-    transform: translateY(-50%); /* To keep the image centered vertically */
 }
 
 .user-dp > img {
-    width: 60px; /* Fix the size of the profile picture */
-    height: 60px; /* Keep it proportional */
-    border-radius: 50%;
-    border: 3px solid white; /* Add a white border around the image */
+  width: 60px; /* Fix the size of the profile picture */
+  height: 60px; /* Keep it proportional */
+  border-radius: 50%;
+  border: 3px solid white; /* Add a white border around the image */
 }
 
 .portfolio-content {
-    padding: 60px 10px 10px 10px; /* Adjust padding to avoid overlap */
-    text-align: left; /* Center-align content */
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 1rem; /* Adjust padding to avoid overlap */
+  text-align: left; /* Center-align content */
 }
 
 .card-btn {
-    background-color: black;
-    padding: 4px 6px;
-    margin: 2px;
-    border: none;
-    border-radius: 3px;
-    color: #ffffff;
+  background-color: black;
+  padding: 4px 6px;
+  margin: 2px;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
 }
 
-
-@media screen and (max-width:435px) {
-    .portfolio-card{
-        width: 90%;
-    }
+@media screen and (max-width: 435px) {
+  .portfolio-card {
+    width: 90%;
+  }
 }
