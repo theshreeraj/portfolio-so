@@ -10,8 +10,6 @@
   display: block; /* Ensure the image is treated as a block element */
 }
 
-.user-dp {
-}
 
 .user-dp > img {
   width: 60px; /* Fix the size of the profile picture */
@@ -30,11 +28,21 @@
 .card-btn {
   background-color: black;
   padding: 4px 6px;
-  margin: 2px;
+  margin: 8px 2px 0px 2px;
   border: none;
   border-radius: 3px;
   color: #ffffff;
+  transition: all 0.8s ease;
+  border: 1px solid black;
 }
+
+.card-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid whitesmoke;
+}
+
 
 @media screen and (max-width: 435px) {
   .portfolio-card {
