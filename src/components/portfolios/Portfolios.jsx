@@ -5,6 +5,7 @@ import sharvariAlawekar from "../../assets/portfoliohero/sharvari-alawekar-hero.
 import gauriPawar from "../../assets/portfoliohero/gauri-pawar-hero.png";
 import abhijeetmane from "../../assets/portfoliohero/abhijeet-mane-hero.png";
 import shahrukhnangur from "../../assets/portfoliohero/shahruk-nangur-hero.png";
+import eshwarlalpotu from "../../assets/portfoliohero/eshwar-lalpotu-hero.png";
 
 // Import your JSON data
 const jsonData = {
@@ -41,6 +42,15 @@ const jsonData = {
       title: "Full Stack Developer",
       portfoliolink: "https://portfolio-shahrukh.vercel.app/",
       linkedIn: "www.linkedin.com/in/shahrukh-nagnur",
+    },
+    user5: {
+      "portfolio-hero": eshwarlalpotu,
+      "profile-photo":
+        "https://media.licdn.com/dms/image/v2/D4D03AQEvYU0IdjOUlw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715325501490?e=2147483647&v=beta&t=sxiqEYJlbk-AA4E16UKWTCHCkzu6aIeiR3Lo8qB8cEY",
+      username: "Eshwar Lalpotu",
+      title: "Full Stack Developer",
+      portfoliolink: "https://eshwar-devv-test.vercel.app/",
+      linkedIn: "https://www.linkedin.com/in/eshwar-lalpotu",
     },
   },
 };
