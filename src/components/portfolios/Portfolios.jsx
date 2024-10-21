@@ -42,6 +42,12 @@ const jsonData = {
       title: "Full Stack Developer",
       portfoliolink: "https://portfolio-shahrukh.vercel.app/",
       linkedIn: "www.linkedin.com/in/shahrukh-nagnur",
+      "profile-photo":
+        "https://media.licdn.com/dms/image/v2/D4D03AQHfoRFEqRcjbA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1705036734621?e=2147483647&v=beta&t=T-UOnisaDtSARkNYX0pPQpPfOIfnKvGgdzQySZhEME4",
+      username: "Shahrukh Nangur",
+      title: "Full Stack Developer",
+      portfoliolink: "https://portfolio-shahrukh.vercel.app/",
+      linkedIn: "www.linkedin.com/in/shahrukh-nagnur",
     },
     user5: {
       "portfolio-hero": eshwarlalpotu,

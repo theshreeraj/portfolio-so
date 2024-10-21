@@ -10,6 +10,7 @@
   display: block; /* Ensure the image is treated as a block element */
 }
 
+
 .user-dp > img {
   width: 60px; /* Fix the size of the profile picture */
   height: 60px; /* Keep it proportional */
@@ -41,6 +42,7 @@
   color: black;
   border: 1px solid whitesmoke;
 }
+
 
 @media screen and (max-width: 435px) {
   .portfolio-card {
