@@ -6,6 +6,7 @@ import gauriPawar from "../../assets/portfoliohero/gauri-pawar-hero.png";
 import abhijeetmane from "../../assets/portfoliohero/abhijeet-mane-hero.png";
 import shahrukhnangur from "../../assets/portfoliohero/shahruk-nangur-hero.png";
 import eshwarlalpotu from "../../assets/portfoliohero/eshwar-lalpotu-hero.png";
+import aniketjoshi from "../../assets/portfoliohero/aniket-joshi-hero.jpeg";
 
 // Import your JSON data
 const jsonData = {
@@ -57,6 +58,15 @@ const jsonData = {
       title: "Full Stack Developer",
       portfoliolink: "https://eshwar-devv-test.vercel.app/",
       linkedIn: "https://www.linkedin.com/in/eshwar-lalpotu",
+    },
+    user6: {
+      "portfolio-hero": aniketjoshi,
+      "profile-photo":
+        "https://media.licdn.com/dms/image/v2/D4D03AQEQqz6M6tLybA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724227351041?e=1735171200&v=beta&t=84iZYJgfnhIP9w100eBjRUg0mujUGaIoJJJH-dVx-6s",
+      username: "Aniket Joshi",
+      title: "Full Stack Developer",
+      portfoliolink: "https://portfolio-web-amber-eight.vercel.app/",
+      linkedIn: "https://www.linkedin.com/in/aniket-joshi-388b81207",
     },
   },
 };
