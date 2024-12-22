@@ -8,13 +8,6 @@ const PortfolioCard = ({ user }) => {
       <div className="portfolio-web">
         <img src={user["portfolio-hero"]} alt="" />
       </div>
-      {/* <div className="user-dp">
-        <img
-          className="userImg"
-          src={user["profile-photo"]}
-          alt={user.username}
-        />
-      </div> */}
       <div className="portfolio-content">
         <div className="user-dp">
           <img
@@ -29,10 +22,10 @@ const PortfolioCard = ({ user }) => {
             <small>{user.title}</small>
           </p>
           <a href={user.portfoliolink} target="_blank" rel="noreferrer">
-            {" "}
             <button className="card-btn">Portfolio</button>
           </a>
-          <Link to="/userDetails">
+          {/* This Link will navigate to the UserDetail page with the user's ID */}
+          <Link to={`/user/${user._id}`}>
             <button className="card-btn">Details</button>
           </Link>
         </div>

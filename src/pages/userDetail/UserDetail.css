@@ -1,6 +1,20 @@
+.main-user-details{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: whitesmoke; */
+}
+
 .user-detail-container {
   width: 90%;
+  height: 80%;
+  border: 1px solid whitesmoke;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
+  padding: 1.5rem;
+  border-radius: 1rem;
   margin: auto;
+  /* background-color: white; */
 }
 
 .user-detail-card {
