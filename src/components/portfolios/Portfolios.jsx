@@ -12,7 +12,9 @@ const Portfolios = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/api/users/");
+        const response = await axios.get(
+          "https://portfolio-so-backend.vercel.app/api/users/"
+        );
         setUsers(response.data); // Set the user data
         setLoading(false); // Set loading to false once data is fetched
       } catch (error) {

@@ -12,7 +12,7 @@ const UserDetail = () => {
     const fetchUserDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/users/${userId}`
+          `https://portfolio-so-backend.vercel.app/api/users/${userId}`
         );
         setUserDetails(response.data); // Set the user details state
         setLoading(false); // Set loading to false
