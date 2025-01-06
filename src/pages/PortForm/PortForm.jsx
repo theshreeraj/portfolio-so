@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./PortForm.css";
 
 const PortForm = () => {
@@ -10,9 +11,14 @@ const PortForm = () => {
     portfoliolink: "",
     linkedIn: "",
     description: "",
+    experienceCategory: "",
+    password: "",
     portfolioHero: null,
     profilePhoto: null,
   });
+
+  const [loading, setLoading] = useState(false); // State to manage loader
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleChange = (e) => {
     const { name, value, type, files } = e.target;
@@ -25,6 +31,7 @@ const PortForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true); // Show loader
 
     const data = new FormData();
     data.append("name", formData.name);
@@ -33,6 +40,8 @@ const PortForm = () => {
     data.append("portfoliolink", formData.portfoliolink);
     data.append("linkedIn", formData.linkedIn);
     data.append("description", formData.description);
+    data.append("experienceCategory", formData.experienceCategory);
+    data.append("password", formData.password);
     if (formData.portfolioHero) {
       data.append("portfolioHero", formData.portfolioHero);
     }
@@ -41,17 +50,24 @@ const PortForm = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:8000/api/users", data, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
+      const response = await axios.post(
+        "http://localhost:8000/api/users",
+        data,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
 
       alert("Portfolio created successfully!");
       console.log(response.data);
+      navigate("/"); // Redirect to home page
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Error creating portfolio. Please try again.");
+    } finally {
+      setLoading(false); // Hide loader
     }
   };
 
@@ -112,6 +128,27 @@ const PortForm = () => {
                   onChange={handleChange}
                 />
               </div>
+              <div>
+                <p>
+                  <label htmlFor="experienceCategory">
+                    Experience category
+                  </label>
+                </p>
+                <select
+                  className="form-input"
+                  name="experienceCategory"
+                  value={formData.experienceCategory}
+                  onChange={handleChange}
+                >
+                  <option value="" disabled>
+                    Select experience category
+                  </option>
+                  <option value="0-1 year">0-1 year</option>
+                  <option value="1-2 years">1-2 years</option>
+                  <option value="2-5 years">2-5 years</option>
+                  <option value="5+ years">5+ years</option>
+                </select>
+              </div>
             </div>
 
             <div className="right-column">
@@ -165,6 +202,19 @@ const PortForm = () => {
                   placeholder="Full Stack Developer with a penchant for technology."
                 />
               </div>
+              <div>
+                <p>
+                  <label htmlFor="password">Password</label>
+                </p>
+                <input
+                  className="form-input"
+                  type="password"
+                  name="password"
+                  value={formData.password}
+                  onChange={handleChange}
+                  placeholder=""
+                />
+              </div>
             </div>
           </div>
 
@@ -175,8 +225,8 @@ const PortForm = () => {
               marginTop: "1rem",
             }}
           >
-            <button className="form-btn" type="submit">
-              Submit Form
+            <button className="form-btn" type="submit" disabled={loading}>
+              {loading ? "Submitting..." : "Submit Form"}
             </button>
           </div>
         </form>
