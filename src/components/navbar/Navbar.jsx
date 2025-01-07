@@ -11,21 +11,21 @@ const Navbar = () => {
         </div>
 
         <div className="nav-menu">
-          <Link to="/jobform">
+          {/* <Link to="/jobform">
             <button className="cta-btn">Post a Job</button>
-          </Link>
+          </Link> */}
           <Link to="/portfolioform">
             <button className="cta-btn">Submit Your Portfolio</button>
           </Link>
           <button className="cta-btn">Share on X</button>
 
-          <Link to="/userdashboard">
+          {/* <Link to="/userdashboard">
             <button className="cta-btn">U</button>
           </Link>
 
           <Link to="/recruiterdashboard">
             <button className="cta-btn">R</button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </>
